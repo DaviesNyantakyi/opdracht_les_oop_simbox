@@ -1,0 +1,14 @@
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.AssemblyInfoInputs.cache
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.AssemblyInfo.cs
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.csproj.CoreCompileInputs.cache
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\bin\Debug\net8.0\opdrachten_les_oop.exe
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\bin\Debug\net8.0\opdrachten_les_oop.deps.json
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\bin\Debug\net8.0\opdrachten_les_oop.runtimeconfig.json
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\bin\Debug\net8.0\opdrachten_les_oop.dll
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\bin\Debug\net8.0\opdrachten_les_oop.pdb
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.dll
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\refint\opdrachten_les_oop.dll
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.pdb
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.genruntimeconfig.cache
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\ref\opdrachten_les_oop.dll
