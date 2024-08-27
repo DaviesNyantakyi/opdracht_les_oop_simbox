@@ -9,21 +9,12 @@ namespace simBox
 {
     internal class SimBox
     {
-        public SimKaart simKaart1, simKaart2, simkaart3;
-        private int aantalSimKaarten = 0;
+      //  private int aantalSimKaarten = 0;
+        public SimKaart SimKaart1 { get; set; }
+        public SimKaart SimKaart2 { get; set; }
+        public SimKaart SimKaart3 { get; set; }
 
 
-        public SimBox(SimKaart simKaart1 = null, SimKaart simKaart2 = null, SimKaart simKaart3 = null)
-        {
-
-            this.simKaart1 = simKaart1;
-            this.simKaart2 = simKaart2;
-            this.simkaart3 = simKaart3;
-
-
-         
-
-        }
         public int AantalSimKaarten
         {
             // Hier kun je alleen het aantal simkaarten opvragen, maar de waarde niet veranderen omdat de setter niet is gedefinieerd.
@@ -31,12 +22,37 @@ namespace simBox
             {
 
                 // Elke keer dat het object wordt geïnitialiseerd, controleren we het aantal simkaarten
-                if (simKaart1 != null) aantalSimKaarten++;
-                if (simKaart2 != null) aantalSimKaarten++;
-                if (simkaart3 != null) aantalSimKaarten++;
 
-                return aantalSimKaarten;
-            
+                /*   if (SimKaart1 != null)
+                   {
+                       aantalSimKaarten++;
+                   }
+                   if  (SimKaart2 != null)
+                   {
+                       aantalSimKaarten++;
+                   }
+                   if (SimKaart3 != null)
+                   {
+                       aantalSimKaarten++;
+                   }
+                   return aantalSimKaarten;
+               */
+
+               
+                int aantal = 0;
+                if (SimKaart1 != null)
+                {
+                    aantal++;
+                }
+                if (SimKaart2 != null)
+                {
+                    aantal++;
+                }
+                if (SimKaart3 != null)
+                {
+                    aantal++;
+                }
+                return aantal;
             }
         }
 

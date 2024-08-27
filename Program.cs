@@ -12,12 +12,12 @@ namespace program
         static void Main(string[] args)
         {
 
-
-
             int userInput;
             SimBox simBox = new SimBox();
+            
 
             do {
+
                 string inputTelfoon;
                 Console.WriteLine("*** SIMBOX ***");
                 Console.WriteLine("1. Simkaart gegevens ingeven");
@@ -25,56 +25,68 @@ namespace program
                 Console.WriteLine("3. Aantal geinstalleerde SIM kaarten");
                 Console.WriteLine("4. Stop");
                 Console.Write("> ");
-
                 userInput = int.Parse(Console.ReadLine());
 
                 switch (userInput)
                 {
                     case 1:
 
-                        Console.Write($"Geef get telefoonnummer van SIM kaart {simBox.AantalSimKaarten + 1} in: ");
-                        inputTelfoon = Console.ReadLine();
-                        if (simBox.simKaart1 == null)
+                        if(simBox.AantalSimKaarten == 3) 
                         {
-                            simBox.simKaart1 = new SimKaart(telefoonnummer: inputTelfoon, createDatum: DateTime.Now);
-                            Console.WriteLine("Druk op een toets om verder te gaan");
-                            Console.ReadLine(); 
-                        }
-                        else if (simBox.simKaart2 == null)
+                            Console.WriteLine("Maximaal aantal SIM kaarten geinstaleerd");
+                        } 
+                        else
                         {
+                            Console.Write($"Geef het telefoonnummer van SIM kaart {simBox.AantalSimKaarten + 1} in: ");
+                            inputTelfoon = Console.ReadLine();
+                            SimKaart  simKaart = new SimKaart { Telefoonnummer = inputTelfoon };
 
-                            simBox.simKaart2 = new SimKaart(telefoonnummer: inputTelfoon, createDatum: DateTime.Now);
-                            Console.WriteLine("Druk op een toets om verder te gaan");
-                            Console.ReadLine();
-                        }
-                        else  
-                        {
 
-                            simBox.simkaart3 = new SimKaart(telefoonnummer: inputTelfoon, createDatum: DateTime.Now);
-                            Console.WriteLine("Druk op een toets om verder te gaan");
-                            Console.ReadLine();
+
+                            if (simBox.SimKaart1 == null)
+                            {
+                                simBox.SimKaart1 = simKaart;
+                            }
+                            else if (simBox.SimKaart2 == null)
+                            {
+                                simBox.SimKaart2 = simKaart;
+                            }
+                            else if (simBox.SimKaart3 == null)
+                            {
+                                simBox.SimKaart3 = simKaart;
+                            }
                         }
-                        
-                        Console.Clear();
+                       
                         break;
                     case 2:
-                        Console.WriteLine("dit is nummer2");
+
+                        Console.WriteLine("Overzicht geinstalleerde SIM kaarten:");
+                        if(simBox.SimKaart1 != null) Console.WriteLine($"Sim kaart 1: {simBox.SimKaart1.Telefoonnummer} / Facuratie datum: {simBox.SimKaart1.CreateDatum.ToString("dd-MMM-yy H:mm:s")}");
+                        if (simBox.SimKaart2 != null) Console.WriteLine($"Sim kaart 2: {simBox.SimKaart2.Telefoonnummer} / Facuratie datum: {simBox.SimKaart2.CreateDatum.ToString("dd-MMM-yy H:mm:s")}");
+                        if (simBox.SimKaart3 != null) Console.WriteLine($"Sim kaart 3: {simBox.SimKaart3.Telefoonnummer} / Facuratie datum: {simBox.SimKaart3.CreateDatum.ToString("dd-MMM-yy H:mm:s")}");
+                      
                         break;
                     case 3:
-                        Console.WriteLine("dit is nummer3");
+                        int simslots = 3;
+                        Console.WriteLine($"Aantal geinstalleerde SIM kaarten: {simBox.AantalSimKaarten} (nog {simslots - simBox.AantalSimKaarten} slot(s) vrij)");
+                      
                         break;
                     case 4:
-                        Console.WriteLine("dit is nummer4");
                         break;
+                    default:
+                        Console.WriteLine("Ongeldig menu optie");
+                        break;
+
                 }
 
-            } while(userInput != 4);
+               if(userInput != 4)
+                {
+                    Console.WriteLine("Druk op een toets om verder te gaan");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
+            } while (userInput != 4);
             
-
-
-
-
-
         }
 
     }

@@ -12,3 +12,4 @@ C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Deb
 C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.pdb
 C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.genruntimeconfig.cache
 C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\ref\opdrachten_les_oop.dll
+C:\Users\davie\Desktop\School\Programmeren_met_csharp\opdrachten_les_oop\obj\Debug\net8.0\opdrachten_les_oop.sourcelink.json
